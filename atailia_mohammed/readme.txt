@@ -1,9 +1,9 @@
-							*---------------------------------------*
-							*	Auteur: Mohammed ATAILIA	*
-							*---------------------------------------*
-							*---------------------------------------*
-							*	     Langage: Java		*
-							*---------------------------------------*
+			*---------------------------------------*
+			*	Auteur: Mohammed ATAILIA	*
+			*---------------------------------------*
+			*---------------------------------------*
+			*	Langage: Java (version 7u7)	*		
+			*---------------------------------------*
 
 
 
@@ -12,51 +12,51 @@
 Informatika, une application pour la gestion des campus.
 --------------------------------------------------------
 
-* Le langage de programmation utilisé est: Java
+* Le langage de programmation utilisï¿½ est: Java
 
-* L’application répond aux spécifications du cahier des charges, PDF «Test2011-1 » ci-joint.
+* Lï¿½application rï¿½pond aux spï¿½cifications du cahier des charges, PDF ï¿½Test2011-1 ï¿½ ci-joint.
 
 * Le fichier source contient 3 packages :
 
-	1- Default package : contient la classe « Program » qui gère la création des objets et tester l’application.
+	1- Default package : contient la classe ï¿½ Program ï¿½ qui gï¿½re la crï¿½ation des objets et tester lï¿½application.
 
-	2- Model : contient les classes qui modélisent les différentes entités de l’application « Campus, Teacher, 					InternalTeacher, ExternalTeacher, et Student ».
+	2- Model : contient les classes qui modï¿½lisent les diffï¿½rentes entitï¿½s de lï¿½application ï¿½ Campus, Teacher, 					InternalTeacher, ExternalTeacher, et Student ï¿½.
 	
-	3- Exception : contient la classe « FullCampusException » pour la génération d’exception personnalisée.
+	3- Exception : contient la classe ï¿½ FullCampusException ï¿½ pour la gï¿½nï¿½ration dï¿½exception personnalisï¿½e.
 
 ------------------------------
-Les fonctionnalités avancées :
+Les fonctionnalitï¿½s avancï¿½es :
 ------------------------------
 
-	1- Tri des étudiants :
+	1- Tri des ï¿½tudiants :
 	----------------------
-	une méthode « triListStudents() » de la classe « Campus », qui renvoie une liste de « Student » triée.
+	une mï¿½thode ï¿½ triListStudents() ï¿½ de la classe ï¿½ Campus ï¿½, qui renvoie une liste de ï¿½ Student ï¿½ triï¿½e.
 
-	2- Comparaisons entre étudiants :
+	2- Comparaisons entre ï¿½tudiants :
 	---------------------------------
- 	une méthode « isTheSameAs(Student s) » de la classe « Student », qui renvoie un « boolean (true/false) » en fonction des cas suivant :
+ 	une mï¿½thode ï¿½ isTheSameAs(Student s) ï¿½ de la classe ï¿½ Student ï¿½, qui renvoie un ï¿½ boolean (true/false) ï¿½ en fonction des cas suivant :
 
-			True si : Deux étudiants sans id avec le même nom et prénom
-			False si : Deux étudiants sans id avec nom ou prénom différents.
-			True si : Deux étudiants avec deux id identiques	
-			False si : Deux étudiants avec deux id différents
+			True si : Deux ï¿½tudiants sans id avec le mï¿½me nom et prï¿½nom
+			False si : Deux ï¿½tudiants sans id avec nom ou prï¿½nom diffï¿½rents.
+			True si : Deux ï¿½tudiants avec deux id identiques	
+			False si : Deux ï¿½tudiants avec deux id diffï¿½rents
 
 	3- Comparaison entre campus :
 	-----------------------------
-	une méthode « isTheSameAs(Campus c) » de la classe « Campus », qui renvoie un « boolean (true/false) » en fonction des cas suivant :
+	une mï¿½thode ï¿½ isTheSameAs(Campus c) ï¿½ de la classe ï¿½ Campus ï¿½, qui renvoie un ï¿½ boolean (true/false) ï¿½ en fonction des cas suivant :
 
-			True si : Deux campus dans la même ville et la même région
-			False si : Deux campus dans deux villes ou régions différentes
+			True si : Deux campus dans la mï¿½me ville et la mï¿½me rï¿½gion
+			False si : Deux campus dans deux villes ou rï¿½gions diffï¿½rentes
 
 
-	4- La sauvegarde des données sous format Xml :
+	4- La sauvegarde des donnï¿½es sous format Xml :
 	----------------------------------------------
-	La sauvegarde des données en format « Xml » est possible avec la méthode « saveToXml(String path, String fileName) » de la classe « Campus », qui prend en 		paramètres le chemin du dossier de stockage, plus le nom du fichier à stocker.
+	La sauvegarde des donnï¿½es en format ï¿½ Xml ï¿½ est possible avec la mï¿½thode ï¿½ saveToXml(String path, String fileName) ï¿½ de la classe ï¿½ Campus ï¿½, qui prend en 		paramï¿½tres le chemin du dossier de stockage, plus le nom du fichier ï¿½ stocker.
 
 ------------
 Jeu de test:
 ------------
 
-	la classe « Program » fourni t un jeu de test permettant de vérifier la création des objets et toutes les fonctionnalités de l’application.
+	la classe ï¿½ Program ï¿½ fourni t un jeu de test permettant de vï¿½rifier la crï¿½ation des objets et toutes les fonctionnalitï¿½s de lï¿½application.
 
 
