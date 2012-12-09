@@ -77,7 +77,7 @@ public class Campus implements Comparable<Object> {
 
 	@XmlTransient
 	public List<Student> getStudents() {
-		return students;
+		return Collections.unmodifiableList(this.students);// renvoie une liste non modifiable
 	}
 
 	public void setStudents(List<Student> students) {
@@ -86,7 +86,7 @@ public class Campus implements Comparable<Object> {
 
 	@XmlTransient
 	public List<Teacher> getTeachers() {
-		return teachers;
+		return Collections.unmodifiableList(this.teachers);
 	}
 
 	public void setTeachers(List<Teacher> teachers) {
@@ -105,11 +105,11 @@ public class Campus implements Comparable<Object> {
 	public void addStudent(Student s) {
 		try {
 			if (getStudents() == null) {
-				getStudents().add(s);
+				this.students.add(s);
 			} else {
 
 				if (students.size() < getCapacite()) {
-					getStudents().add(s);
+					this.students.add(s);
 				} else {
 					throw new FullCampusException("le campus est plein!!!");
 				}
@@ -129,17 +129,16 @@ public class Campus implements Comparable<Object> {
 	// Méthodes spécifiques pur gérer les professeurs
 
 	public void addTeacher(Teacher t) {
-		getTeachers().add(t);
+		this.teachers.add(t);
 	}
 
 	public void removeTeacher(Teacher t) {
-		getTeachers().remove(t);
+		this.teachers.remove(t);
 	}
 
 	// Tri de la list des étudiants
-	public List<Student> triListStudents() {
-		Collections.sort(this.getStudents());
-		return this.getStudents();
+	public void triListStudents() {
+		Collections.sort(this.students);
 	}
 
 	// Comparaison entre deux campus

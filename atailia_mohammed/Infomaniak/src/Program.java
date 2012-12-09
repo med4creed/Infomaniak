@@ -109,7 +109,8 @@ public class Program {
 		for (Student s : c1.getStudents())
 			System.out.println(s);
 		System.out.println("-------------- après le tri --------------------");
-		for (Student s : c1.triListStudents())
+		c1.triListStudents();
+		for (Student s : c1.getStudents())
 			System.out.println(s);
 
 		// tests de comparaisons entre étudiants
